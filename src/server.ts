@@ -2,12 +2,14 @@ import "reflect-metadata";
 import express, { Request, Response } from "express";
 import swaggerUi from "swagger-ui-express";
 
-import "./database";
+import { createConnection } from "./database/data-source";
 
 import "./shared/container";
 
 import { router } from "./routes";
 import swaggerFile from "./swagger.json";
+
+createConnection();
 
 const app = express();
 
