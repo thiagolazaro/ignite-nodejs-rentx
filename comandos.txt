@@ -1,0 +1,4 @@
+# TypeORM
+
+# Rodar a migration
+npm run typeorm -- -d src/database/data-sorce.ts migration:run

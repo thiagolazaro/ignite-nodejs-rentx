@@ -5,6 +5,7 @@ import { ensureAuthenticated } from "../middlewares/ensureAuthenticate";
 
 import { CreateUserController } from "../modules/accounts/userCases/createUser/CreateUserController";
 import { UpdateUserAvatarController } from "../modules/accounts/userCases/updateUserAvatar/UpdateUserAvatarController";
+import { UpdateUserAvatarUseCase } from "../modules/accounts/userCases/updateUserAvatar/UpdateUserAvatarUseCase";
 
 const createUserController = new CreateUserController();
 const updateUserAvatarController = new UpdateUserAvatarController();
